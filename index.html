@@ -4,25 +4,27 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>웹 스터디 ::: 여상수</title>
+  <title>웹 스터디 ::: 노형래</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css"
     integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="./css/style.css" />
+
 </head>
 
 <body>
   <div id="head_title">
     <h1>웹화면 구현 수업의 웹스터디 페이지</h1>
-    <h2><!-- TODO: 자기이름을 써주세요--></h2>
+    <h2>노형래</h2>
     <p>
       안녕하세요!<br />
-      <!-- TODO: 간단한 자기소개를 써주세요(1줄~2줄) -->
+      목원대 컴퓨터공학과 노형래입니다.
       <br /><br />
-      <!-- FIXME: 폰트어썸에서 3개~5개 정도를 넣어주세요 -->
-      <i class="fa-brands fa-tiktok fa-2xl" style="color: #f20202"></i>
-      <i class="fa-brands fa-facebook fa-beat fa-2xl" style="color: #74c0fc"></i>
-      <i class="fa-brands fa-facebook fa-2xl" style="color: #74c0fc"></i>
+      
+      <i class="fa-solid fa-music fa-bounce" style="color: #63E6BE;"></i>
+      <i class="fa-solid fa-heart fa-beat" style="color: #dd3c6c;"></i>
+      <i class="fa-brands fa-discord fa-shake" style="color: #5594c3;"></i>
+      
     </p>
   </div>
   <hr />
@@ -32,13 +34,26 @@
   <!-- TODO: 애니메이션 속성으로 전환 효과 제어하기 p.250 -->
 
 
+  <div id="ani3">
+    애니메이션<br>
+    <button id="start"><i class="fa-solid fa-play"></i></button>
+    <button id="paused"><i class="fa-solid fa-pause"></i></button>
+  </div>
+
+<div id="trans5">
+  저는움<br>
+  직일거<br>
+  에요
+</div>
+
+
   <!-- FIXME: 아래쪽 주석 삭제하기 -->
   
   <h1>flex-container</h1>
 
   <div class="flex-container">
     <!-- FIXME: 지금 예제를 대체하는 콘텐츠로, 영화 또는 드라마 콘텐츠 4개 작성 -->
-    <div class="flex-item">
+    <div class="grid-item">
       <dl>
         <dt>영화소개 : 듄2</dt>
         <dd>
@@ -152,6 +167,27 @@
     </div>
   </div>
 
+  <h1>화면설계그리드</h1>
+  <div class="grid-layout">
+    <div class="gl-item header" id="header">헤더부분<div id="head_title">
+      <h1>웹화면 구현 수업의 웹스터디 페이지</h1>
+      <h2>노형래</h2>
+      <p>
+        안녕하세요!<br />
+        목원대 컴퓨터공학과 노형래입니다.
+        <br /><br />
+        
+        <i class="fa-solid fa-music fa-bounce" style="color: #63E6BE;"></i>
+        <i class="fa-solid fa-heart fa-beat" style="color: #dd3c6c;"></i>
+        <i class="fa-brands fa-discord fa-shake" style="color: #5594c3;"></i>
+        
+      </p>
+    </div></div>
+    <div class="gl-item sidebar" id="sidebar">사이드바 부분</div>
+    <div class="gl-item content" id="content">콘텐트부분</div>
+    <div class="gl-item footer" id="footer">풋터부분</div>
+  </div>
+  <script src="./js/main.js"></script>
 </body>
 
 </html>
